@@ -32,6 +32,7 @@ const HandleDeepLink = () => {
     // const apiUrl = `www.heroku123.com/redirect1/${pathSegments}`;
     // const pathSegments = `${userType}/${roomId}/${chatType}/${linkType}`;
     const apiUrl = `https://bableon-django-1193e2d277c3.herokuapp.com/chat/redirect1`;
+    window.open(apiUrl, "_blank");
 
     axios
       .get(apiUrl)
