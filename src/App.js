@@ -1,4 +1,4 @@
-// import logo from "./logo.jpg";
+import logo from "./logo.jpg";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -17,6 +17,7 @@ const App = () => {
           path="/app/chat/:userType/:roomId/:chatType/:linkType"
           element={<HandleDeepLink />}
         />
+        <Route path="/" element={<Home />} />
         {/* Add other routes here */}
       </Routes>
     </Router>
@@ -45,5 +46,13 @@ const HandleDeepLink = () => {
 
   return <div>Redirecting...</div>;
 };
-
+const Home = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+      </header>
+    </div>
+  );
+};
 export default App;
