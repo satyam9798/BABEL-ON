@@ -1,4 +1,4 @@
-import logo from "./logo.jpg";
+// import logo from "./logo.jpg";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -24,13 +24,13 @@ const App = () => {
   );
 };
 const HandleDeepLink = () => {
-  const history = useNavigate();
+  // const history = useNavigate();
   const { userType, roomId, chatType, linkType } = useParams();
   console.log("path segment", userType, roomId, chatType, linkType);
 
   useEffect(() => {
     // const apiUrl = `www.heroku123.com/redirect1/${pathSegments}`;
-    const pathSegments = `${userType}/${roomId}/${chatType}/${linkType}`;
+    // const pathSegments = `${userType}/${roomId}/${chatType}/${linkType}`;
     const apiUrl = `https://bableon-django-1193e2d277c3.herokuapp.com/chat/redirect1`;
 
     axios
