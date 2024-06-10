@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useNavigate,
   useParams,
 } from "react-router-dom";
 import axios from "axios";
